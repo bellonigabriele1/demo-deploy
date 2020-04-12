@@ -1,0 +1,10 @@
+<p>inserisci qua l'elemento da aggiungere</p>
+<input [(ngModel)]="name">
+<p>{{name}}</p>
+<button (click)="addToUno()">aggiungi a 1</button>
+<hr>
+<h4 *ngFor="let element of unoElements">
+    {{ element }}
+    <button (click)="onDestroy(element)">destroy</button>
+</h4>
+
